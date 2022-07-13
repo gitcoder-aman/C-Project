@@ -1,0 +1,76 @@
+#include<stdio.h>
+int arr[5],front,count,rear;
+void insert();
+void delete1();
+void display();
+main()
+{
+    int op;
+    do
+    {
+    printf("\n1)Insert\n2)Delete\n3)Display\n0)Exit:");
+    printf("\nEnter choose option:");
+    scanf("%d",&op);
+    switch(op)
+    {
+    case 1:
+        insert();
+        break;
+    case 2:
+        delete1();
+        break;
+    case 3:
+        display();
+        break;
+    case 0:
+        printf("\nGood Bye!");
+        return 1;
+    default:
+        printf("Invalid choice:");
+    }
+    }while(1);
+}
+void insert()
+{
+    if(count==5)
+    {
+        printf("\nQueue is Full:");
+        return;
+    }
+    if(rear==5)
+    rear=0;
+    printf("\nEnter any Element:");
+    scanf("%d",&arr[rear]);
+    rear++;
+    count++;
+}
+void delete1()
+{
+    if(count==0)
+    {
+        printf("\nQueue is Empty:");
+        return;
+    }
+    if(front==5)
+      front=0;
+      printf("\n%d is Deleted",arr[front]);
+      front++;
+      count--;
+}
+void display()
+{
+      int i,n;
+      n=front;
+    if(count==0)
+    {
+       printf("\nQueue is Empty:");
+        return;
+    }
+    for(i=1;i<=count;i++)
+    {
+        if(n==5)
+            n=0;
+        printf("\n%d",arr[n]);
+        n++;
+    }
+}

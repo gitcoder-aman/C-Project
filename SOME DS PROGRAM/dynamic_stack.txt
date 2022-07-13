@@ -1,0 +1,85 @@
+//Dynamic Implementation of stack using Linked List
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+    int x;
+    struct node *next;
+
+};
+struct node *top;
+void push();
+void pop();
+void peep();
+int main()
+{
+ int op;
+    do
+    {
+        printf("\n 1) Push \n 2) Pop \n 3)Peep \n 0)Exit");
+        printf("\n Enter your option::");
+        scanf("%d",&op);
+        switch(op)
+        {
+            case 1:
+             push();
+             break;
+            case 2:
+             pop();
+             break;
+            case 3:
+             peep();
+             break;
+            case 0:
+             printf("\n Good Bye !");
+             return 1;
+            default:
+             printf("\n Invalid Option.....");
+
+        }
+    }while(1);
+}
+void push()
+{
+   struct node *ptr;
+   ptr=(struct node *)malloc(sizeof(struct node));
+   if(ptr==NULL)
+   {
+       printf("\n Overflow...");
+       return;
+   }
+   printf("\n Enter element in node ::");
+   scanf("%d",&ptr->x);
+   ptr->next=top;
+   top=ptr;
+}
+ void pop()
+ {
+     struct node *ptr;
+     if(top==NULL)
+     {
+         printf("\n Stack is Empty..");
+         return;
+     }
+     ptr=top;
+     top=top->next;
+     printf("\n %d node is Poped...",ptr->x);
+     free(ptr);
+
+ }
+ void peep()
+ {
+     struct node *ptr;
+     if(top==NULL)
+     {
+         printf("\n Stack is Empty..");
+         return;
+     }
+     ptr=top;
+     while(ptr!=NULL)
+     {
+         printf("\n Element=%d",ptr->x);
+         ptr=ptr->next;
+     }
+
+ }

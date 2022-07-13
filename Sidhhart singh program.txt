@@ -1,0 +1,109 @@
+1) Write a Program to Find GCD or HCF of two numbers
+   entered by user
+2) Write a Program to Find LCM of two numbers entered
+   by user
+3) Write a Program to Display all Factors of a Number
+   entered by User
+4) Hollow Rectangular star
+* * * * *
+*      *
+* * * * *
+5) Hollow Full Pyramid Star
+               *
+			  * *
+			 *   *
+			*     *
+		   ***********
+		   
+7) Write a Program to Display Prime Numbers Between Two
+   Intervals (entered by the user) Using Functions
+   
+8) Write a Program to check if an integer (entered by the user)
+   can be expressed as the sum of two prime numbers,if yes then
+   print all possible combinations with the use of functions.
+   Example
+   Enter a positive integer: 34
+   OUTPUT:
+   34 = 3 + 31
+   34 = 5 + 29
+   34 = 11 + 23
+   34 = 17 + 17
+   
+9) Write a Program to Convert Binary Number to Decimal
+   manually by creating user-defined functions.
+  
+
+10) Write a Program to Convert Decimal to Binary number
+    manually by creating user-defined functions.
+	
+11) Write a Program to Calculate Factorial of a Number Using
+    Recursion
+12) Write a Program to Find G.C.D of two numbers entered by
+    user Using Recursion
+	
+13) Write a Program that takes n element from user and displays
+    the largest element of an array
+14) Write a Program that calculates the standard deviation of 10
+    data using arrays
+	
+15) Write a Program that takes the array of five element and the
+    elements of that array are accessed using pointer.
+
+16) Write a Program that adds two matrices using Multidimensional Arrays where the number of rows r and columns c is
+    entered by user (Value of r and c < 100)
+
+17) Write a Program takes two matrices of order r1*c1 and r2*c2
+    respectively. Then, the program multiplies these two matrices (if
+    possible) and displays it on the screen.
+	
+18) Write a Program that takes a matrix of order r*c from the user
+    and computes the transpose of the matrix.
+
+19)  Write a Program that takes three integers from the user and
+     swaps them in cyclic order using pointers.
+     Example:
+     Enter value of a, b and c respectively:1 2 3
+     Value after swapping numbers in cycle:
+     a=3
+     b=1
+     c=2
+20)  Write a Program to Find the Frequency of given Character by
+     user in a String
+	 
+21)  Write a Program to Remove all Characters in a String Except
+     Alphabets.
+     Example:
+     Enter a string: p2'r"o@gram84iz./
+     Output String: programiz
+	 
+21)  Write a Program to Concatenate (join) Two Strings entered
+     by user
+	 
+22)  Write a C++ program to change every letter in a given string
+     with the letter following it in the alphabet (ie. a becomes b, p
+     becomes q, z becomes a).
+     Example:
+     Sample Input: Abcdef3
+     Sample Output: Bcdefg3
+	 
+23)  Write a C++ program to count all the words in a given
+     string.Words must be separated by only one space
+     Example:
+     Sample Input: Siddharth Singh
+     Sample Output: number of words -> 2
+	 
+24)  Write a C++ program to capitalize the first letter of each
+     word of a given string. Words must be separated by only one
+     space
+     Example:
+     Sample Input: cpp string exercises
+     Sample Output: Cpp String Exercises
+	 
+25)  Write a C++ program to find the largest word in a given
+     String.
+     Example:
+     Sample Input: C++ is a general-purpose programming language.
+     Sample Output: programming
+
+
+

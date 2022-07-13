@@ -1,0 +1,119 @@
+                                 BOOLEAN ALGEBRA
+								 ------------------
+ DEVELOPED BY :- GEORGE BOLLE (1815 - 1864)
+ -------------------------------------------
+ 
+ BOOLEAN ALGEBRA :- Boleean algebra deals with binary number system . It is very useful is designing logic circuit used in processor of computer system.
+ 
+ In mod 1980 , George Bolle an english mathematician developed algebra for simplifying the representation and manipulation of propositional logic. It is known as  BOOLEAN ALGEBRA. Boleean algebra provied an economical approach.Today bollean algebra is used extentively in designing electronic circuit of computer.
+	  
+                          fundamental concept of boolean algebra
+                          --------------------------------------
+Boolean algebra is based on the fundamental concept described below.
+1) = logical addition
+     The synbol "+" is used for logical addition operator. It is also known as "OR" operator.we can define "+" symbol by list all possible combination of A and B with the resulting value of C,for each combination in the equationn A+B=C , since the variable A and B can have only 2 possible values (0 or 1),only for (2^2) combination of inputs are possible . The resulting output value for each of the for inputs combination  are given in the table.such a table is known as truth table.
+	 Example:-
+	 
+	          0+0=0
+	          1+0=1
+	          0+1=1
+	          1+1=1
+	 Here is (2^2) means , how many variable we are taking.. here we take A and B (2 variable) , so , total possible combination available => 2^2 = 4.
+	 If we take 3 variable as A,B,C then total possible combinatons will be : 2^3 = 8.
+	 Observe that the result is 0 only when input variable are 0.
+	       It is 1 where any one or both of the input variable are 1. This is the reason why the PLUS symbol does not have the normal arithmetic meaning but it is logical addition operator.
+		   
+		   a+b+c+d=e
+		   If a,b,c,d , all have vlues of 1 then.... the sum will be only one.... e.g = 1+1+1+1=1.
+	 
+2) = logical Multiplication -
+     The symbol "." is used for logical multiplication opeartor . It is also known as AND operator. we can defined the DOT symbol ny listing all possible combination of A and B with the resulting value of C for each combination in the equation
+	 A.B=C.
+	 
+	 TRUTH TABLE FOR LOGICAL MULTIPLICATION :-
+	       
+		    A  .  B  =   C
+			0  .  0  =   0
+			0  .  1  =   0
+			1  .  0  =   0
+			1  .  1  =   1
+			
+It's truth table for logical AND operator . Observe that the result C=1 only , when both input values of A and B  are 1 , other than , result will be 0. The equation A.b=c is normally read as A&B=C.
+
+                                  COMPLIMENTATION
+								  ---------------
+OR and AND  are binary opeartions , they opearte in two variables. complimentation is unary opeartion defined on a single variable.
+       The symbol "-"is used for complimenation opeartor.It si also known as NOT operator.Hence we write A^- meaning compliments of A  or (A+B)^- complimemnts of A+B.
+	   
+complimentation of a variable is the reverse of its value , hence if A=0 then A^- = 1 or if A=1 then , compliment of A (A^-)= 0.
+                         input     output
+                         -----------------						 
+						 A            A^-
+						 1            0
+						 0            1
+			Truth table for logical NOt operator.
+			
+#  A^- is read as compliment of A or NOT of A.
+
+               Postulates of Boolean Algebra
+			   -------------------------------
+postulate 1:
+------------
+   (a)= A=0 , if and only , if A is not equal to 1
+   (b)= A=1 . if and only if , A is not equal to 0
+   
+postulate 2:
+------------
+   (a)= x+0=x
+   (b)= x.1=x
+   
+postulate 3: (commutative law)
+------------
+   (a)= x+y=y+x
+   (b)= x.y=y.x
+   
+postulate 4: ( Associative law )
+------------
+    (a)= x+(y+z)=(x+y)+z
+	(b)= x.(y.z)==(x.y).z
+	
+postulate 5: ( Distributive law )
+------------
+   (a)= x.(y+z)==x.y+x.z
+   (b)= x+y(y.z)=(x+y).(x+z)
+   
+postulate 6:
+------------
+   (a)= x+x^- = 1
+   (b)= x.x^- = 0
+ --------------------------------------------------------------  
+                Theorem proving through postulates
+				-----------------------------------
+#  Theorem 1=
+-------------
+a) x+x=x
+ => L.H.s=x+x
+ => (x+x).1 [ by postualte 2{b} ]
+ => (x+x).(x+x compliment) [ by postulate 6{a} ]
+ =>  x+(x.x compliment) [ by postulate 5{b} ]
+ =>  x+0 [ by postulate 6{b} ]
+ =>  x [ by postulate 2{a} ] = R.H.S
+ 
+ b) x.x=x
+ => x.x+0 [ by postulate 2{a} ]
+ => x.x+x.x compliment[ by postulate 6{b} ]
+ => x.(x+x complimment) [ by postulate 5(a) ]
+ => x.1 [ by postulate 6{a} ]
+ => x [ by postulate 2{b} ] = R.H.S
+ 
+# Theorem 2=
+------------
+ a) x+1=1
+ =>  L.H.s=x+1
+ => (x+1).1 [ by postulate 2{b} ]
+ => (x+1).(x+x compliment) [ by postulate 6{a} ]
+ => x+1.x compliment [ by postulate 5{b} ]
+ => x+x compliment .1 [ by postulate 3{b} ]
+ =>x+x compliment [ by postulate 2{b} ]
+ => 1 [ by postulate 6{a} ]
+   
